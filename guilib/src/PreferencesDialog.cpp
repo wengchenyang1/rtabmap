@@ -2151,9 +2151,9 @@ void PreferencesDialog::resetSettings(QGroupBox * groupBox)
 		_ui->checkbox_rs2_emitter->setChecked(true);
 		_ui->checkbox_rs2_irMode->setChecked(false);
 		_ui->checkbox_rs2_irDepth->setChecked(true);
-		_ui->spinBox_rs2_width->setValue(848);
+		_ui->spinBox_rs2_width->setValue(640);
 		_ui->spinBox_rs2_height->setValue(480);
-		_ui->spinBox_rs2_rate->setValue(60);
+		_ui->spinBox_rs2_rate->setValue(30);
 		_ui->spinBox_rs2_width_depth->setValue(640);
 		_ui->spinBox_rs2_height_depth->setValue(480);
 		_ui->spinBox_rs2_rate_depth->setValue(30);
@@ -4214,9 +4214,9 @@ void PreferencesDialog::selectSourceDriver(Src src, int variant)
 			}
 			else // D400
 			{
-				_ui->spinBox_rs2_width->setValue(848);
+				_ui->spinBox_rs2_width->setValue(640);
 				_ui->spinBox_rs2_height->setValue(480);
-				_ui->spinBox_rs2_rate->setValue(60);
+				_ui->spinBox_rs2_rate->setValue(30);
 				_ui->checkbox_rs2_irMode->setChecked(true);
 				_ui->checkbox_rs2_emitter->setChecked(false);
 			}
