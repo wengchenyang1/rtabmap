@@ -1970,13 +1970,13 @@ void PreferencesDialog::resetSettings(QGroupBox * groupBox)
 	{
 		for(int i=0; i<2; ++i)
 		{
-			_3dRenderingShowClouds[i]->setChecked(true);
+			_3dRenderingShowClouds[i]->setChecked(i==0?true:false);
 			_3dRenderingDecimation[i]->setValue(4);
 			_3dRenderingMaxDepth[i]->setValue(0.0);
 			_3dRenderingMinDepth[i]->setValue(0.0);
 			_3dRenderingRoiRatios[i]->setText("0.0 0.0 0.0 0.0");
 			_3dRenderingShowScans[i]->setChecked(true);
-			_3dRenderingShowFeatures[i]->setChecked(i==0?false:true);
+			_3dRenderingShowFeatures[i]->setChecked(false);
 			_3dRenderingShowFrustums[i]->setChecked(false);
 
 			_3dRenderingDownsamplingScan[i]->setValue(1);
@@ -1984,8 +1984,8 @@ void PreferencesDialog::resetSettings(QGroupBox * groupBox)
 			_3dRenderingMinRange[i]->setValue(0.0);
 			_3dRenderingVoxelSizeScan[i]->setValue(0.0);
 			_3dRenderingColorScheme[i]->setValue(0);
-			_3dRenderingOpacity[i]->setValue(i==0?1.0:0.75);
-			_3dRenderingPtSize[i]->setValue(i==0?1:2);
+			_3dRenderingOpacity[i]->setValue(i==0?0.9:0.75);
+			_3dRenderingPtSize[i]->setValue(i==0?4:2);
 			_3dRenderingColorSchemeScan[i]->setValue(0);
 			_3dRenderingOpacityScan[i]->setValue(i==0?1.0:0.5);
 			_3dRenderingPtSizeScan[i]->setValue(i==0?1:2);
